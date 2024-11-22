@@ -3,9 +3,14 @@ html {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+    background-color: #f7e9db;
 }
 
 h1 {
+    margin: 0; /*Gets rid of gap at the top*/
+    padding: 20px, 0;
+    color: #f46a61;
     font-size: 60px;
     text-align: center;
 }
@@ -15,4 +20,11 @@ li {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+}
+
+body{width: 600px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px; /*top, right, bottom, left*/
+    border: 10px solid #545454;
+    background-color: #f7e9db;
 }
