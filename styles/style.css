@@ -18,10 +18,47 @@ h1 {
 }
 
 p,
-li {
+li,
+a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+}
+
+li.naventry {
+    text-align: center;
+    border-bottom: 1px solid #545454;
+}
+
+li.naventry:last-child {
+    border-bottom: none;
+}
+
+
+li.naventry a {
+    display: block;
+    color: black;
+    background-color: #ffe1c4;
+    text-decoration: none;
+}
+
+li.naventry a:hover {
+    background-color: #545454;
+    color: #f7e9db;
+}
+
+li.naventry a.active {
+    background-color: #f46a61;
+    color: #f7e9db;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f7e9db;
+    border: 1px solid #545454;
 }
 
 body {
@@ -32,6 +69,8 @@ body {
     border: 10px solid #545454;
     background-color: #f7e9db;
 }
+
+
 
 img {
     display: block;
