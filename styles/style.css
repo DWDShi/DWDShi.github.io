@@ -25,11 +25,15 @@ a {
     letter-spacing: 0.5px;
 }
 
+/*my first method of creating 'buttons', this uses the 
+list elements with stylings to emulate a button.*/
 li.naventry {
     text-align: center;
     border-bottom: 1px solid #545454;
 }
 
+/*since the list and a border around it already, the 
+final entry doesnt actually need a bottom border*/
 li.naventry:last-child {
     border-bottom: none;
 }
@@ -42,6 +46,7 @@ li.naventry a {
     text-decoration: none;
 }
 
+/*Adds a nice colour change when the 'button' is hovered over*/
 li.naventry a:hover {
     background-color: #545454;
     color: #f7e9db;
@@ -52,6 +57,7 @@ li.naventry a.active {
     color: #f7e9db;
 }
 
+/*container for all of the entries*/
 ul.navbar {
     list-style-type: none;
     margin: 0;
@@ -70,11 +76,42 @@ body {
     background-color: #f7e9db;
 }
 
+/*decided to use a different method for a different set of buttons, 
+still using the anchor tag as it is a nav button*/
+.projbutton {
+    background-color: #f46a61;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 33%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    display: block;
+    cursor: pointer;
+}
+
+.projbutton:hover {
+    background-color: #545454;
+}
+
+.projbutton.off:hover {
+    background-color: #f46a61;
+}
+
+.projbutton.off {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
 
 img {
     display: block;
     width: 200px;
     margin: 10px 0;
-    
+
 }
