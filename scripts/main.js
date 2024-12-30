@@ -1,4 +1,4 @@
 //types work like python, just assign and pray 
-let complaintString = "YEOWCH!";
+let wipString = "This page is a work in progress and will be updated to include most of my projects.";
 
-document.querySelector("h1").addEventListener("click", function () { alert(complaintString) });
+document.querySelector(".projbutton.off").addEventListener("click", function () { alert(wipString) });
